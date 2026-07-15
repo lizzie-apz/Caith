@@ -1,0 +1,434 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    background:#fff;
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+section{
+    padding:80px 10%;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    width:100%;
+    background:#000;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo h1{
+    color:#fff;
+    font-size:30px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    color:#fff;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d49b17;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+#hero{
+    margin-top:80px;
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#8b5d4d;
+    color:#fff;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    margin-bottom:35px;
+}
+
+.hero-text a{
+    display:inline-block;
+    padding:14px 28px;
+    margin-right:15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.hero-text a:first-child{
+    background:#d69d1e;
+    color:#fff;
+}
+
+.hero-text a:last-child{
+    background:#111;
+    color:#fff;
+}
+
+.hero-image{
+    flex:1;
+}
+
+/* ==========================
+   QUIENES SOMOS
+========================== */
+
+#quienes-somos{
+    background:#efe8d5;
+    text-align:center;
+}
+
+#quienes-somos h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#8d2317;
+}
+
+.botones{
+    margin:30px 0;
+}
+
+.botones button{
+    padding:12px 30px;
+    margin:10px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.botones button:first-child{
+    background:#d69d1e;
+}
+
+.botones button:last-child{
+    background:#000;
+    color:#fff;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.cards article{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.cards h3{
+    color:#8d2317;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   PARTICIPA
+========================== */
+
+#participa{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    background:#efe8d5;
+}
+
+.pasos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.pasos article{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* ==========================
+   ESTADÍSTICAS
+========================== */
+
+#estadisticas{
+    text-align:center;
+}
+
+.grafico{
+    height:280px;
+    background:#f1f1f1;
+    border-radius:15px;
+    margin:40px 0;
+}
+
+.numeros{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.numeros article{
+    background:#fff;
+    width:220px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.numeros h3{
+    font-size:40px;
+    color:#8d2317;
+}
+
+/* ==========================
+   ESTRATEGIAS
+========================== */
+
+#estrategias{
+    text-align:center;
+}
+
+.filtros{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin:40px 0;
+}
+
+select,
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:15px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.filtros button{
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+}
+
+#estrategias .cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* ==========================
+   GALERÍA
+========================== */
+
+#galeria{
+    background:#fafafa;
+}
+
+.imagen-principal{
+    height:350px;
+    background:#ddd;
+    border-radius:15px;
+}
+
+.banner{
+    margin-top:40px;
+    height:200px;
+    background:#e6e6e6;
+    border-radius:15px;
+}
+
+/* ==========================
+   REDES
+========================== */
+
+#redes{
+    text-align:center;
+}
+
+.publicaciones{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.publicaciones article{
+    height:280px;
+    background:#ededed;
+    border-radius:10px;
+}
+
+/* ==========================
+   FORMULARIOS
+========================== */
+
+form{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+textarea{
+    grid-column:1/3;
+    height:150px;
+}
+
+form button{
+    width:220px;
+    padding:15px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+}
+
+#donaciones,
+#voluntario,
+#vivienda,
+#alimentacion{
+    text-align:center;
+}
+
+#donaciones h2,
+#voluntario h2,
+#vivienda h2,
+#alimentacion h2{
+    margin-bottom:40px;
+    color:#8d2317;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:40px 10%;
+    text-align:center;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:#fff;
+    margin:0 15px;
+}
+
+.footer-links a:hover{
+    color:#d69d1e;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    #hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #participa{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .pasos{
+        grid-template-columns:1fr;
+    }
+
+    .publicaciones{
+        grid-template-columns:1fr;
+    }
+
+    .numeros{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    form{
+        grid-template-columns:1fr;
+    }
+
+    textarea{
+        grid-column:1;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:20px;
+    }
+
+}
